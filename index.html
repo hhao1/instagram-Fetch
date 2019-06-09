@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>instagram fetch</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1 class="typying" id="title">Fectch instagram by user ID</h1>
+  
+    <form id="form" class="col-lg-6 col-8 mx-auto">
+        <div class="input-group">
+          <input id="username" class="form-control" placeholder="Enter the username here"/>
+          <span>
+            <button id="fetch" type="button" class="btn btn-primary">Fetch</button>
+          </span>
+        </div>
+      </form>
+
+
+      <form id="numberbox" class="numberbox">
+        <div class="input-group">
+          <input id="numberval" class="form-control" placeholder="How many photos?"/>
+          <span>
+            <button id="number" type="button" class="btn btn-primary" onclick="changeLimit()">number</button>
+          </span>
+        </div>
+      </form>
+      <center id="suggest">suggest：ji_hyukkim , aki_miyajima</center>
+      <center id="private">test private:jennifer.caceress</center>
+      <center id="not exist">test not exist:indhscd</center>
+      
+      <div id="listing" class="gallery"></div>
+
+  
+  
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
+
+

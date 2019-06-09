@@ -1,0 +1,137 @@
+:root {
+    --eastsea: 'East Sea Dokdo', cursive;
+}
+img {
+    width: 250px;
+  }
+.numberbox{
+    position:absolute;
+    top:0;
+    right:0;
+   }
+.btn-primary{
+    color:#fff;
+    background-color:#ffcccc;
+    border-color:#ffcccc}
+.btn-primary:hover{
+    color:#fff;
+    background-color:#ff9999;
+    border-color:#ffb3b3}
+.btn-primary.focus,.btn-primary:focus{
+    box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}
+.btn-primary.disabled,.btn-primary:disabled{
+    color:#fff;background-color:#ffcccc;border-color:#ffcccc}
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
+    color:#fff;background-color:#ffcccc;border-color:#ff9999}
+.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>
+.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}
+
+#home {
+    clip-path: url(#cache);
+  }
+  
+  #red {
+    fill: none;
+    opacity: 0.15;
+    stroke: #CE1B5F;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+  
+  #blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 6;
+    stroke-miterlimit:10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;    
+  }
+  
+  body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg,#3a1c71,#d7d7d7,#ffaf7b,#d299c2);
+    background-size: 400% 400%;
+    background-attachment:fixed;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.typying {
+    width: 10em;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: var(--eastsea);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15em; }
+}
+
+@keyframes blink-caret {
+  from, to { box-shadow: 1px 0 0 0 transparent; }
+  50% { box-shadow: 1px 0 0 0; }
+}
